@@ -31,7 +31,8 @@ body {
     border: 2px solid var(--color-primary);
     margin: 3rem auto;
     border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .5);;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
+	overflow-x: hidden;
 }
 
 /* Header */
@@ -129,6 +130,11 @@ body {
     border: 2px solid var(--color-primary);
     border-radius: 3px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, .5);
+}
+
+.to-do-text {
+    width: 13rem;
+    text-align: center;
 }
 
 .to-do-input::placeholder {
