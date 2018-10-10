@@ -11,10 +11,11 @@
  const listContainer = document.querySelector('.list-container');
 
 
- // 1. Add the task to the list
-        const state = {
-            tasks: []
-        };
+
+    const state = {
+        tasks: []
+    };
+
             
     // Update the local storage
     const updateStorage = (tasks) => {
@@ -25,6 +26,9 @@
 
     // Restore the tasks in the to-do list
     restoreTasks= () => {
+
+            if(!localStorage.getItem('tasks'))
+                localStorage.setItem('tasks', []);
 
            // Get all the tasks from the localStorage
             state.tasks = JSON.parse( localStorage.getItem('tasks'));
@@ -52,6 +56,7 @@
         restoreTasks();
     });
 
+     // 1. Add the task to the list
 
  const addTask = () => {
     
