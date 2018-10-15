@@ -150,6 +150,6 @@
     //  Delete the task item from the contaner
     deleteTask(e);
 
-    // 3. Strike through the text if it is checked
+    // 3. Strike the text if it is checked
     taskToggle(e);
  });
